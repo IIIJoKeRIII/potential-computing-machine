@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Консультация
+{% endblock %}
+
+{% block body %}
+<center>
+    <form class="form-control" method="post">
+<div class="circle">
+    <div class="register-form-container">
+        <h1 class="form-title">
+            Анкета
+        </h1>
+        <div class="form-fields">
+            <div class="form-field">
+                <input type="text" placeholder="Фамилия" name="family">
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Имя" name="name">
+                </div>
+            <div class="form-field">
+                <input type="text" placeholder="Отчество" name="old_name">
+            </div>
+            <div class="form-field">
+                <input type="email" placeholder="Почта" name="mail">
+            </div>
+            <div class="form-field">
+                <input type="text" placeholder="Номер телефона" name="phone">
+            </div>
+            <div class="form-field">
+            <p>
+                Что бы вы хотели узнать?
+            </p>
+                <textarea name="txt" id="text" maxlength="500" cols="45" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+        </div>
+        <div class="form-buttons">
+            <center><button class="button">
+                Отправить
+            </button></center>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </form>
+</center>
+{% endblock %}
